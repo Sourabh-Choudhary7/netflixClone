@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+    
+}
+
+body {
+    background-color: black;
+    color: white;
+   
+}
+
+/* design header navbar  */
+.main-hero-section {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("./assets/back_perspective_alpha.jpg");
+    background-size:cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+    height: 100vh;
+}
+
+.Netflix-logo img {
+    width: 15%;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.main-hero-section .header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.right-header-button {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-right: 5%;
+    margin-top: 1%;
+    
+   
+}
+
+.right-header-button select {
+    background-color: transparent;
+    color: white;
+    padding: 3px 15px;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+
+.right-header-button select option {
+    color: black;
+    background-color: rgb(168, 153, 153);
+}
+.btn {
+    background-color: #e50914;;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    height: 6vh;
+    width: 7vw;
+    /* padding: 0px 30px; */
+    border-radius: 5px;
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+
+/* Designing main section */
+
+.main-section {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    margin-top: 5%;
+}
+.heading-main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+
+}
+.heading-main-page h1 {
+    font-size: 3.3em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading-main-page h3 {
+    font-size: 27px;
+    font-weight: 500;
+    margin-top: 5%;
+}
+
+.heading-main-page h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 3%;
+}
+
+.email-submit-section {
+    display: flex;
+    justify-content: center;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    height: 60px!important;
+    /* min-width: 500px; */
+    margin-top: 3%;
+}
+
+.email-submit-section input {
+    width: 500px;
+    font-size: large;
+    padding-left: 10px;
+    border: none
+}
+
+.email-submit-section button {
+    width: 200px;
+    background-color: #e50914;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    font-weight: 550;
+    border: none;
+    cursor: pointer;
+}
+
+.email-submit-section button:hover {
+    background-color: red;
+}
+hr {
+    height: 10px;
+    background-color: rgba(108, 118, 126, 0.548);
+    border: none;
+}
+/* Middle main content section */
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 8%;
+    margin-top: 5%;
+    gap: -20%;
+    margin-bottom: 5%;
+}
+
+.heading-and-paragraph h1 {
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5%;
+
+}
+
+.heading-and-paragraph p {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Designing Frequently asked Questions section */
+
+.heading-question {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2.2em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5%;
+}
+
+.accordion{
+    margin:60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.accordion input[type="checkbox"]:checked+label+.content{
+max-height: 600px;
+padding: 30px 20px;
+}
+.accordion input[type="checkbox"]:checked+label::after{
+    transform: rotate(135deg);
+}
+.Frequently-ask-Question .email-signup{
+    max-width: 600px;
+    margin:20px auto 60px;
+
+}
+.Frequently-ask-Question h5{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.Frequently-ask-Question {
+    margin-bottom: 5%;
+    padding: 10px 8%;
+}
+
+/* Footer section */
+
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .col{
+    flex-basis:15%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.left-footer-button select {
+    background-color: transparent;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+.left-footer-button select option {
+    color: white;
+    background-color: black;
+}
+.right-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* mobile responsive media query */
+
+@media only screen and (max-width: 950px) {
+    .Netflix-logo img {
+        width: 50%;
+    }
+
+    .right-header-button select {
+        padding: 1px 1px;
+        border-radius: 2px;
+    }
+    
+    .btn {
+        
+        font-size: 1em;
+    
+        height: 6vh;
+        width: 17vw;
+    }
+    
+    .heading-main-page h1 {
+        font-size: 2.2em;
+    }
+    .heading-main-page h3 {
+        font-size: 1.5em;
+    }
+    .heading-main-page h4 {
+        font-size: 1em;
+    }
+    .email-submit-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    .email-submit-section input {
+        width: 350px;
+        height: 20vh;
+        font-size: small ;
+    }
+
+    .middle-main-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+
+
+}
+
+@media only screen and (min-width: 450px) and 
+(max-width: 780px) {
+    .main-hero-section {
+        width: 100vw;
+    }
+    .heading-main-page h1 {
+        font-size: 2.2em;
+    }
+    .heading-main-page h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 250px) and 
+(max-width: 450px) {
+    .main-hero-section {
+        width: 100vw;
+    }
+}
